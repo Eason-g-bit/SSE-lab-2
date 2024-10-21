@@ -7,7 +7,8 @@ app = Flask(__name__)
 def submit():
     input_name = request.form.get("name")
     input_age = request.form.get("age")
-    return render_template("hello.html", name=input_name, age=input_age)
+    return render_template("hello.html", 
+name=input_name, age=input_age)
 
 
 @app.route("/")
